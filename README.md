@@ -56,6 +56,7 @@ Steps to wiring on the breadboard:
   * Otherwise it will give you info on what is on the RP2040. NOTE: loading this code will wipe out what is currently on the RP2040. You can use `picotool save` to record this information, but usage of that commmand is outside the bounds of these instructions.
 * in the `build/` you created in the Build step above, run `picotool load pico_dimmer.uf2`
 * Confirm the code is loaded by running `picotool info` again. Output should show something like:
+
     Program Information
      name:          pico_dimmer
      web site:      https://github.com/ironhandedlayman/pico_dimmer
