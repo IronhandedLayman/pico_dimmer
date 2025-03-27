@@ -29,11 +29,15 @@ if (CMAKE_C_COMPILER_ID STREQUAL "GNU")
     add_compile_options(-Wno-maybe-uninitialized)
 endif()
 
+
 add_executable(pico_dimmer
     pico_dimmer.c
     )
 
-target_link_libraries(pico_dimmer pico_stdlib)
+pico_enable_stdio_usb(pico_dimmer 1)
+pico_enable_stdio_uart(pico_dimmer 0)
+
+target_link_libraries(pico_dimmer pico_stdlib hardware_adc hardware_pwm)
 
 pico_add_extra_outputs(pico_dimmer)
 

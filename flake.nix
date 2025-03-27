@@ -25,6 +25,7 @@
             cmake
             gcc-arm-embedded
             libusb1
+            minicom
             openocd
             pico-sdk131
             picotool
