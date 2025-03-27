@@ -29,8 +29,10 @@ For now this is manual (working on a `nix build` step as my next TODO):
 
 ## Hardware and RP2040 setup
 
-Diagram will come in a future commit.
+Here is a diagram of the intended wiring (drawn in KiCad):
+![Diagram Schematic from KiCad in SVG format](docs/pico_dimmer_schematic.svg)
 
+Steps to wiring on the breadboard:
 * Place the RP2040 on a breadboard.
 * LED setup through GP19:
     * Connect pin 19 to a current-limiting resistor (I used a 220-ohm resistor, colored red-red-brown)
@@ -77,7 +79,7 @@ Diagram will come in a future commit.
 
 ## TODO
 
-* [ ] Add wiring diagram to make things clearer
+* [X] Add wiring diagram to make things clearer
 * [ ] Add `nix build` command to flake
 * [ ] Add install script to drop .uf2 file onto RP2040 for faster interation
 * [ ] Add some digital readout of the output of the ADC on the breadboard.
