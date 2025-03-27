@@ -57,12 +57,14 @@ Steps to wiring on the breadboard:
 * in the `build/` you created in the Build step above, run `picotool load pico_dimmer.uf2`
 * Confirm the code is loaded by running `picotool info` again. Output should show something like:
 
+```
     Program Information
      name:          pico_dimmer
      web site:      https://github.com/ironhandedlayman/pico_dimmer
      features:      USB stdin / stdout
      binary start:  0x10000000
      binary end:    0x100081d4
+```
 
 ## Running the code
 
